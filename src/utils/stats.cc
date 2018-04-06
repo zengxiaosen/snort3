@@ -287,7 +287,7 @@ void DropStats()
 {
     DAQStats daq_stats;
     get_daq_stats(daq_stats);
-
+    LogLabel("对攻击检测进行流量实验");
     LogLabel("Packet Statistics");
     show_stats((PegCount*)&daq_stats, daq_names, array_size(daq_names)-1, "daq");
 
