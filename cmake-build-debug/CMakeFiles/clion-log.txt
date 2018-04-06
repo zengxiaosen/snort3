@@ -1,0 +1,57 @@
+/home/zengxiaosen/下载/clion-2017.1.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/zengxiaosen/snort3
+-- The CXX compiler identification is GNU 5.4.0
+-- The C compiler identification is GNU 5.4.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+CMake Error at cmake/FindDAQ.cmake:35 (message):
+  
+
+          ERROR! Cannot find LibDAQ's static libraries!  Make sure the binary
+          file `daq-modules-config` is in your path.
+
+  
+
+Call Stack (most recent call first):
+  cmake/include_libraries.cmake:4 (find_package)
+  CMakeLists.txt:22 (include)
+
+
+CMake Error at /home/zengxiaosen/下载/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake:138 (message):
+  
+
+      ERROR! Cannot find LibDAQ.  Go get it from 
+      http://snort.org/snort-downloads or use the --with-daq-*
+      options if you have it installed in an unusual place.
+
+  
+
+   (missing:  DAQ_LIBRARY DAQ_LIBRARIES DAQ_INCLUDE_DIR) 
+Call Stack (most recent call first):
+  /home/zengxiaosen/下载/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)
+  cmake/FindDAQ.cmake:56 (find_package_handle_standard_args)
+  cmake/include_libraries.cmake:4 (find_package)
+  CMakeLists.txt:22 (include)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/zengxiaosen/snort3/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/home/zengxiaosen/snort3/cmake-build-debug/CMakeFiles/CMakeError.log".

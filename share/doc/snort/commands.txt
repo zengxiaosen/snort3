@@ -1,0 +1,2 @@
+* *packet_capture.enable*(filter): dump raw packets
+* *packet_capture.disable*(): stop packet dump
